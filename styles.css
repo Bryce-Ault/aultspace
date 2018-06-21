@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#canvas-left{
+    width: 70%;
+    height: 100%;
+    border: 1px solid gray;
+    position: absolute; top: 0px; left: 0px;
+}
+
+#canvas-right{
+    width: 70%;
+    height: 100%;
+    border: 1px solid salmon;
+    position: absolute; top: 0px; right: 0px;
+}

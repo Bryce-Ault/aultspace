@@ -7,12 +7,37 @@
     <meta name="author" content="Bryce Ault & Isha Mudgal (Ault)">
 
     <title>Aultspace</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="root">
-
+    <div class="container">
+        <canvas id="canvas-left"></canvas>
+        <canvas id="canvas-right"></canvas>
     </div>
 </body>
+
+<script>
+    var canvasLeft = document.getElementById("canvas-left");
+    var ctxLeft = canvasLeft.getContext("2d");
+    imgLeft = new Image();
+
+    var canvasRight = document.getElementById("canvas-right");
+    var ctxRight = canvasRight.getContext("2d");
+    imgRight = new Image();
+
+    drawCanvas(imgLeft, ctxLeft, canvasLeft.width, canvasLeft.height);
+    drawCanvas(imgRight, ctxRight, canvasRight.width, canvasRight.height);
+
+    function drawCanvas(img, ctx, w, h) {
+        img.onload = function () {
+            ctx.drawImage(img, 0, 0, w, h);
+        };
+    }
+
+    imgLeft.src = "./assets/bryce.jpg";
+    imgRight.src = "./assets/isha.jpg";
+</script>
 
 </html>
