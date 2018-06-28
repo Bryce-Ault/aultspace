@@ -1,0 +1,4 @@
+Fonts:
+
+	Isha: Amatic SC
+	Bryce:Bookman Old style
