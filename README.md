@@ -1,2 +1,2 @@
 # aultspace
-This repository holds the code for the static webpage aultspace.com.
+Website is being redesigned and under construction.
